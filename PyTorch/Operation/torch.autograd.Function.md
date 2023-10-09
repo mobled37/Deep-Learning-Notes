@@ -25,4 +25,27 @@ class LegendrePolynomial3(torch.autograd.Function):
 		"""
 		ctx.save_for_backward(input)
 		return 0.5 * (5 * input ** 3 - 3 * input)
+	@staticmethod
+	def backward(ctx, grad_output):
+		"""
+		역전파 단계에서는 출력에 대한 손실(loss)의 변화도(gradient)를 갖는 텐서를 받고,
+		입력에 대한 손실과 변화도를 계산해야한다.
+		"""
+		input, = ctx.saved_tensor
+		return grad_output * 1.5 * (5 * input ** 2 -1)
+
+dtype = torch.float
+device = torch.device("cpu")
+
+"""
+입력값과 출력값을 갖는 텐서들을 생성한다.
+requires_grad=False가 기본값으로 설정되어 Backpropagation 중에 이 텐서들에 대한
+gradient를 계산할 필요가 없음을 나타낸다.
+"""
+x = torch.linspace(-math.pi, math.pi, 2000, device=device, dtype=dtype)
+y = torch.sin(x)
+
+"""
+가중치를 갖는 임의의 텐서를 생성한다. 3차 다항식이므로 4개의 가중치가 필요하다.
+"""
 ```
