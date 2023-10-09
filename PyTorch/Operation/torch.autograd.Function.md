@@ -47,5 +47,25 @@ y = torch.sin(x)
 
 """
 가중치를 갖는 임의의 텐서를 생성한다. 3차 다항식이므로 4개의 가중치가 필요하다.
+y = a + b * P3(c + d * x) 
+이 가중치들이 convergence하기 위해서는 정답으로부터 너무 멀리 떨어지지 않은 값으로
+initialize 되어야 한다.
+requires_grad=True로 설정하여 backprop 중에 이 tensor들에 관한 gradient를 계산할
+필요가 있음을 나타낸다.
 """
+a = torch.full((), 0.0, device=device, dtype=dtype, requires_grad=True)
+b = torch.full((), -1.0, device=device, dtype=dtype, requires_grad=True)
+c = torch.full((), 0.0, device=device, dtype=dtype, requires_grad=True)
+d = torch.full((), 0.3, device=device, dtype=dtype, requires_grad=True)
+
+learning_rate = 5e-6
+for t in range(2000):
+	"""
+	사용자 정의 Function을 적용하기 위해 Function.apply method를 사용한다.
+	"""
+	P3 = LegendrePolynomial3.apply
+	
+	"""
+	forwar
+	"""
 ```
