@@ -60,12 +60,32 @@ d = torch.full((), 0.3, device=device, dtype=dtype, requires_grad=True)
 
 learning_rate = 5e-6
 for t in range(2000):
-	"""
-	사용자 정의 Function을 적용하기 위해 Function.apply method를 사용한다.
-	"""
+	""" 사용자 정의 Function을 적용하기 위해 Function.apply method를 사용한다. """
 	P3 = LegendrePolynomial3.apply
 	
 	"""
-	forwar
+	forward pass: 연산을 하여 예측값 y를 계산한다
+	사용자 정의 autograd 연산을 사용하여 P3를 계산한다.
 	"""
+	y_pred = a + b * P3(c + d * x)
+	
+	loss = (y_pred - y).pow(2).sum()
+	if t % 100 == 99:
+		print(t, loss.item())
+	
+	""" autograd를 사용하여 backprop을 계산한다 """
+	loss.backward()
+	
+	""" gradient descent를 사용하여 weight를 update """
+	with torch.no_grad():
+		a -= learning_rate * a.grad
+		b -= learning_rate * b.grad
+		c -= learning_rate * c.grad
+		d -= learning_rate * d.grad
+		
+		""" weight update 이후에는 gradient를 0으로 만든다 """
+		a.grad = None
+		b.grad = None
+		c.grad = None
+		d.grad = None
 ```
