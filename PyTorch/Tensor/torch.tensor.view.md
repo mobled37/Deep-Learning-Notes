@@ -1,6 +1,6 @@
 reference = https://pytorch.org/docs/stable/generated/torch.Tensor.view.html
 
-Tensor.view(\*shape) -> Tensor
+[[torch.tensor]].view(\*shape) -> Tensor
 ==Returns a new tensor with the same data as the **self** tensor but of a different **shape**==
 
 The returned tensor shares the **same data, same number of elements** but **different size**.
