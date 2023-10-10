@@ -4,7 +4,7 @@ reference = https://pytorch.org/docs/stable/generated/torch.nn.utils.clip_grad_n
 torch.nn.utils.clip_grad_norm_(parameters, max_norm, norm_type=2.0, error_if_nonfinite=False, foreach=None)
 ```
 
-Clips gradient norm of an iterable of parameters. Gradient exploding을 방지하여 학습의 안정화 도모하는 방식이다. (Clipping)
+Clips gradient norm of an iterable of parameters. Gradient exploding을 방지하여 학습의 안정화 도모하는 방식이다. ([[Gradient Clipping]])
 
 The norm is computed over all gradients together, as itf they were concatenated into a single vector. Gradients are modified in-place.
 
