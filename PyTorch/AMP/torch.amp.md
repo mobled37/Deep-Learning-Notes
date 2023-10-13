@@ -1,0 +1,3 @@
+reference: https://pytorch.org/docs/stable/amp.html
+
+`torch.amp` provides convenience methods for mixed precision, where som operations use the `torch.float32` (`float`) or `torch.float16` (`half`) or `torch.bfloat16`. Some operation, like linear layers and convolutions, are much faster in `lower_precision_fp`. Other operations, like reductions, often require the dynamic range of `float32`. Mixed precision tries to match each operation to its appropriate datatype.
