@@ -18,7 +18,7 @@ import torch
 from torch import nn 
 
 text = torch.tensor([[4,4], [4,4]])
-text_mask = torch.tensor([[1,0], [0, 1]])
+text_mask = torch.tensor([[1,0], [0,1]])
 
 text.masked_fill_(torch.tensor((1-text_mask), dtype=torch.bool), float(-9e15))
 print(text)
