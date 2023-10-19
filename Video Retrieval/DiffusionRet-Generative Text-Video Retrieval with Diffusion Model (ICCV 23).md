@@ -1,1 +1,2 @@
-**Problem**: Existing text-video retrieval solutions overlook the underlying data distribution $p$ (query), which makes it challenging 
+**Problem**: Existing text-video retrieval solutions overlook the underlying data distribution $p$ (query), which makes it challenging to identify out-of-distribution data. 
+**Solution**: Diffusion-based Text-video Retrieval framework (DiffusionRet), which models the retrieval task as a process of gradually generating joint distribution from noise.
