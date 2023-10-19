@@ -1,0 +1,1 @@
+**Problem**: Existing text-video retrieval solutions overlook the underlying data distribution $p$ (query), which makes it challenging 
