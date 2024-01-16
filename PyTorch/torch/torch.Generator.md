@@ -1,6 +1,6 @@
 `Class torch.Generator(device='cpu')`
 
-Creates and returns a generator object that manages the state of the algorithm which produces pseudo random numbers. Used as a keyword argument in many In-place random sampling functions.
+Creates and returns a generator object that manages the state of the algorithm which produces pseudo random numbers. Used as a keyword argument in many [[In-place random sampling]] functions.
 
 Parameters
 
@@ -86,17 +86,21 @@ Example:
 >>> g_cpu = torch.Generator()
 >>> g_cpu.manual_seed(2147483647)
 ```
-seed() → [int](https://docs.python.org/3/library/functions.html#int "(in Python v3.12)")[](https://pytorch.org/docs/stable/generated/torch.Generator.html#torch.Generator.seed)
+
+***
+seed() → [[int]]
 
 Gets a non-deterministic random number from std::random_device or the current time and uses it to seed a Generator.
 
 Example:
-
+```python
 >>> g_cpu = torch.Generator()
 >>> g_cpu.seed()
-1516516984916
+# 1516516984916
+```
 
-set_state(_new_state_) → void[](https://pytorch.org/docs/stable/generated/torch.Generator.html#torch.Generator.set_state)
+***
+set_state(_new_state_) → [[void]]
 
 Sets the Generator state.
 
@@ -105,7 +109,8 @@ Parameters
 **new_state** (_torch.ByteTensor_) – The desired state.
 
 Example:
-
+```python
 >>> g_cpu = torch.Generator()
 >>> g_cpu_other = torch.Generator()
 >>> g_cpu.set_state(g_cpu_other.get_state())
+```
