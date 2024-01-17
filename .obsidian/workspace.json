@@ -14,30 +14,10 @@
               "type": "markdown",
               "state": {
                 "file": "Diffusers/Internal Classes/Attention Processor.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
-            },
-            "group": "6f8bf15a8249e7f4"
-          }
-        ]
-      },
-      {
-        "id": "2f7fcf7afacd8c32",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "bbe5c97d130acba1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Diffusers/Internal Classes/Attention Processor.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "6f8bf15a8249e7f4"
+            }
           }
         ]
       }
@@ -169,6 +149,7 @@
   },
   "active": "be42954dea969879",
   "lastOpenFiles": [
+    "Diffusers/Internal Classes/Attention Processor.md",
     "Python/Data Type/void.md",
     "Python/Data Type/int.md",
     "PyTorch/torch/torch.Generator.md",
@@ -176,7 +157,6 @@
     "PyTorch/Tensor/In-place random sampling.md",
     "PyTorch/Operation/torch.cumprod.md",
     "Video Retrieval/DiffusionRet-Generative Text-Video Retrieval with Diffusion Model (ICCV 23).md",
-    "Diffusers/Internal Classes/Attention Processor.md",
     "Diffusers/Internal Classes",
     "Diffusers",
     "PyTorch/Tensor/torch.is_inf.md",
