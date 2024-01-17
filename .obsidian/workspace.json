@@ -17,7 +17,27 @@
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "6f8bf15a8249e7f4"
+          }
+        ]
+      },
+      {
+        "id": "2f7fcf7afacd8c32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbe5c97d130acba1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Diffusers/Internal Classes/Attention Processor.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "6f8bf15a8249e7f4"
           }
         ]
       }
