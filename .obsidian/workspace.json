@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c55289a4cd3a695e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Method/__call__.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diffusers/Internal Classes/Attention Processor.md",
+                "file": "Python/Method/__call__.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diffusers/Internal Classes/Attention Processor.md",
+                "file": "Python/Method/__call__.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diffusers/Internal Classes/Attention Processor.md"
+                "file": "Python/Method/__call__.md"
               }
             }
           }
@@ -147,8 +160,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "be42954dea969879",
+  "active": "c55289a4cd3a695e",
   "lastOpenFiles": [
+    "Python/Method/__call__.md",
     "Diffusers/Internal Classes/Attention Processor.md",
     "Python/Data Type/void.md",
     "Python/Data Type/int.md",
