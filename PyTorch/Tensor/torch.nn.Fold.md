@@ -1,5 +1,25 @@
 - `torch.nn.Fold(output_size, kernel_size, dilation=1, padding=0, stride=1)`
 
+********
+`Unfold` example
+
+```python
+x = torch.tensor([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+```
+
+```python
+>>> x.unfold(1, 2, 1)
+
+tensor([[[ 1,  2], [ 2,  3], [ 3,  4], [ 4,  5]],
+        [[ 6,  7], [ 7,  8], [ 8,  9], [ 9, 10]]])
+
+```
+
+
+![image](https://i.stack.imgur.com/uCrOg.png)
+This image explain `Unfold`, `fold` is step 1, 2. 
+***
+
 Combining an array of sliding local blocks into a large containing tensor.
 
 Consider a batched `input` tensor containing sliding local blocks, e.g., patches of images, of shape ($N, C \times \prod(\mathrm{kernel\_size}), L$), where $N$ is batch dimension, $C \times \prod(\mathrm{kernel\_size})$ is the number of values within a block (a block has $\prod(\mathrm{kernel\_size})$ spatial locations each containing a $C$-channeled vector), and $L$ is the total number of blocks. (This is exactly the same specification as the output shape of `Unfold`.) This operation combines these local blocks into the large `output` tensor of shape $(N, C, \mathrm{output\_size[0]}, \mathrm{output\_size[1]}, ...)$ by summing the overlapping values. Similar to `Unfold`, the arguments must satisfy
