@@ -160,8 +160,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c55289a4cd3a695e",
+  "active": "c1704047c8f023c9",
   "lastOpenFiles": [
+    "attachments",
     "PyTorch/Tensor/torch.repeat_interleave.md",
     "PyTorch/Tensor/torch.nn.Fold.md",
     "Python/Method/__call__.md",
