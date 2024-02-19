@@ -24,6 +24,10 @@ The `padding`, `stride` and `dilation` arguments specify how the sliding blocks 
 - **padding** ([[int]] or [[tuple]], optional) - implicit zero padding to be added on both sides of input. Default: 0
 - **stride** ([[int]] or [[tuple]]) - the stride of the sliding blocks in the input spatial dimensions. Default: 1
 
+**Shape**: 
+- Input: $(N, C \times \prod (\mathrm{kernel\_size}), L)$ or $(C \times \prod (\mathrm{kernel\_size}), L)$
+- Output: $(N, C, \mathrm{output\_size[0]}, \mathrm{output\_size[1]}, ...)$ or $(C, \mathrm{output\_size[0]}, \mathrm{output\_size[1]}, ...)$ as described above.
+
 **NOTE**
 `Fold` calculates each combined value in the resulting large tensor by summing all values from all containing blocks.
 `Unfold` extracts the values in the local blocks by copying from the large tensor. 
@@ -41,4 +45,25 @@ Then for any (supported) `input` tensor the following equality holds:
 
 ```python
 fold(unfold(input)) == divisor * input
+```
+
+where `divisor` is a tensor that depends only on the shape and dtype of the `input`:
+
+```python
+>>> input_ones = torch.ones(input.shape, dtype=input.dtype)
+>>> divisor = fold(unfold(input_ones))
+```
+
+When the `divisor` tensor contains no zero elements, then `fold` and `unfold` operations are inverses of each other (up to constant divisor).
+
++) Currently, only unbatched (3D) or batched (4D) image-like tensors are supported.
+
+**Examples**
+
+```python
+>>> fold = nn.Fold(output_size=(4, 5), kernel_size=(2, 2))
+>>> input = torch.randn(1, 3 * 2 * 2, 12)
+>>> output = fold(input)
+>>> output.size()
+torch.Size([1, 3, 4, 5])
 ```
