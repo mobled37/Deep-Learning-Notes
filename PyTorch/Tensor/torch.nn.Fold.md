@@ -19,4 +19,26 @@ The `padding`, `stride` and `dilation` arguments specify how the sliding blocks 
 **Parameters**
 
 - **output_size** ([[int]] or [[tuple]]) - the shape of the spatial dimensions of the output (i.e., `output.sizes()[2:]`)
-- **kernel_size**
+- **kernel_size** ([[int]] or [[tuple]]) - the size of the sliding blocks
+- **dilation** ([[int]] or [[tuple]], optional) - a parameter that controls the stride of elements within the neighborhood. Default: 1
+- **padding** ([[int]] or [[tuple]], optional) - implicit zero padding to be added on both sides of input. Default: 0
+- **stride** ([[int]] or [[tuple]]) - the stride of the sliding blocks in the input spatial dimensions. Default: 1
+
+**NOTE**
+`Fold` calculates each combined value in the resulting large tensor by summing all values from all containing blocks.
+`Unfold` extracts the values in the local blocks by copying from the large tensor. 
+So, if the blocks overlap, they are not inverses of each other. 
+
+In general, folding and unfolding operations are related as follows. Consider `Fold` and `Unfold` instances created with the same parameters:
+
+```python
+>>> fold_params = dict(kernel_size=..., dilation=..., padding=..., stride=...)
+>>> fold = nn.Fold(output_size=..., **fold_params)
+>>> unfold = nn.Unfold(**fold_params)
+```
+
+Then for any (supported) `input` tensor the following equality holds:
+
+```python
+fold(unfold(input)) == divisor * input
+```
