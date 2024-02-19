@@ -4,7 +4,7 @@ Combining an array of sliding local blocks into a large containing tensor.
 
 Consider a batched `input` tensor containing sliding local blocks, e.g., patches of images, of shape ($N, C \times \prod(\mathrm{kernel\_size}), L$), where $N$ is batch dimension, $C \times \prod(\mathrm{kernel\_size})$ is the number of values within a block (a block has $\prod(\mathrm{kernel\_size})$ spatial locations each containing a $C$-channeled vector), and $L$ is the total number of blocks. (This is exactly the same specification as the output shape of `Unfold`.) This operation combines these local blocks into the large `output` tensor of shape $(N, C, \mathrm{output\_size[0]}, \mathrm{output\_size[1]}, ...)$ by summing the overlapping values. Similar to `Unfold`, the arguments must satisfy
 $$
-L=\prod_d\left\lfloor\frac{\mathrm { output_size }[d]+2 \times \mathrm { padding }[d]-\mathrm { dilation }[d] \times(\mathrm { kernel_size }[d]-1)-1}{\operatorname{stride}[d]}+1\right\rfloor
+L=\prod_d\left\lfloor\frac{\mathrm { output\_size }[d]+2 \times \mathrm { padding }[d]-\mathrm { dilation }[d] \times(\mathrm { kernel\_size }[d]-1)-1}{\operatorname{stride}[d]}+1\right\rfloor
 $$
 where $d$ is over all spatial dimensions. 
 
@@ -13,4 +13,10 @@ where $d$ is over all spatial dimensions.
 The `padding`, `stride` and `dilation` arguments specify how the sliding blocks are retrieved. 
 
 - `stride` controls the stride for the sliding blocks.
-- `padding` cont
+- `padding` controls the amount of implicit zero-paddings on both sides for `padding` number of points for each dimension before reshaping.
+- `dilation` controls the spacing between the kernel points; also known as the à trous algorithm. It is harder to describe, but [link](https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md) has a nice visualization of what `dilation` does.
+
+**Parameters**
+
+- **output_size** ([[int]] or [[tuple]]) - the shape of the spatial dimensions of the output (i.e., `output.sizes()[2:]`)
+- **kernel_size**
