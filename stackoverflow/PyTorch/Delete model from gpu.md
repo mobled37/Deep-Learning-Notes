@@ -5,8 +5,7 @@
 del model
 ```
 
-**In my Case**
-if `del model` doesn't work, do this
+**if `del model` doesn't work, do this**
 ```python
 model = network().cuda()
 
@@ -17,3 +16,5 @@ import gc
 gc.collect()
 torch.cuda.empty_cache()
 ```
+
+It make sence when 
