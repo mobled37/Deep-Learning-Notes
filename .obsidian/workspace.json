@@ -14,12 +14,25 @@
               "type": "markdown",
               "state": {
                 "file": "Diffusers/Internal Classes/Attention Processor.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c55289a4cd3a695e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PyTorch/Tensor/torch.nn.Fold.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diffusers/Internal Classes/Attention Processor.md",
+                "file": "PyTorch/Tensor/torch.nn.Fold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diffusers/Internal Classes/Attention Processor.md",
+                "file": "PyTorch/Tensor/torch.nn.Fold.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diffusers/Internal Classes/Attention Processor.md"
+                "file": "PyTorch/Tensor/torch.nn.Fold.md"
               }
             }
           }
@@ -147,10 +160,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "be42954dea969879",
+  "active": "c1704047c8f023c9",
   "lastOpenFiles": [
-    "Video Retrieval/DiffusionRet-Generative Text-Video Retrieval with Diffusion Model (ICCV 23).md",
+    "attachments",
+    "PyTorch/Tensor/torch.repeat_interleave.md",
+    "PyTorch/Tensor/torch.nn.Fold.md",
+    "Python/Method/__call__.md",
     "Diffusers/Internal Classes/Attention Processor.md",
+    "Python/Data Type/void.md",
+    "Python/Data Type/int.md",
+    "PyTorch/torch/torch.Generator.md",
+    "PyTorch/torch",
+    "PyTorch/Tensor/In-place random sampling.md",
+    "PyTorch/Operation/torch.cumprod.md",
+    "Video Retrieval/DiffusionRet-Generative Text-Video Retrieval with Diffusion Model (ICCV 23).md",
     "Diffusers/Internal Classes",
     "Diffusers",
     "PyTorch/Tensor/torch.is_inf.md",
