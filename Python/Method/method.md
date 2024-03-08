@@ -61,11 +61,12 @@ class로부터 새 객체를 생성할 때마다 실행되는 특별한 method�
 
 ***
 ### static method, class method
-instance method가 객체의 인스턴스 필드를 self를 통해 엑세스할 수 있는 반면, ==static method는 이러한 self 파라미터를 갖지 않고 instance variable에 엑세스할 수 없다.== 따라서, static method는 보통 객체 필드와 독립적이지만 로직상 클래스내에 포함되는 메서트에 사용된다. static method는 method 앞에 @staticmethod라는 decorator를 표시하여 해당 method가 static method임을 표기한다. 
+instance method가 객체의 인스턴스 필드를 self를 통해 엑세스할 수 있는 반면, ==[[staticmethod]]는 이러한 self 파라미터를 갖지 않고 instance variable에 엑세스할 수 없다.== 따라서, [[staticmethod]]는 보통 객체 필드와 독립적이지만 로직상 클래스내에 포함되는 메서트에 사용된다. [[staticmethod]]는 method 앞에 @staticmethod라는 decorator를 표시하여 해당 method가 [[staticmethod]]임을 표기한다. 
 
 유사하게, class method도 @classmethod라는 decorator를 표기하여 class method임을 표시한다. ==class method는 static method와 비슷한데, 객체 instance를 의미하는 self 대신 cls라는 class를 의미하는 파라미터를 전달받는다.== class method는 이렇게 전달받은 cls 파라미터를 통해 class variable에 접근할 수 있다.
 
 ==일반적으로, instance data에 엑세스할 필요가 없는 경우 class method, static method를 이용하는데, 이때 보통 class variable에 접근해야하는 경우에는 class method, 접근이 필요 없는 경우에는 static method를 사용한다.== 
+- instance variable을 변경해야할 때는 class method를 사용하고, instance variable을 변경하지 않고 결과만 구하면 될 때는 [[staticmethod]]를 사용하면 된다.
 
 아래 예제에서 isSquare() method는 static method로서 cls 파라미터를 전달받지 않고 매서드 내에서 cls 변수를 사용하지 않고 있다. 반면, printCount() method는 class method로서 cls 파라미터를 전달받고 메서드 내에서 class variable count를 사용하고 있다.
 
