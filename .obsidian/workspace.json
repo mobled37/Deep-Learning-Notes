@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PyTorch/Tensor/torch.nn.Fold.md",
+                "file": "PyTorch/Operation/torch.roll.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 245.5
   },
   "right": {
     "id": "a0d7c0ee7e6413d8",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PyTorch/Tensor/torch.nn.Fold.md",
+                "file": "PyTorch/Operation/torch.roll.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PyTorch/Tensor/torch.nn.Fold.md",
+                "file": "PyTorch/Operation/torch.roll.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PyTorch/Tensor/torch.nn.Fold.md"
+                "file": "PyTorch/Operation/torch.roll.md"
               }
             }
           }
@@ -160,13 +160,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c1704047c8f023c9",
+  "active": "c55289a4cd3a695e",
   "lastOpenFiles": [
+    "PyTorch/Tensor/torch.nn.Fold.md",
+    "PyTorch/Operation/torch.roll.md",
+    "Diffusers/Internal Classes/Attention Processor.md",
+    "stackoverflow/PyTorch/Delete model from gpu.md",
+    "stackoverflow/PyTorch",
+    "stackoverflow",
+    "Python/Method/staticmethod.md",
     "attachments",
     "PyTorch/Tensor/torch.repeat_interleave.md",
-    "PyTorch/Tensor/torch.nn.Fold.md",
     "Python/Method/__call__.md",
-    "Diffusers/Internal Classes/Attention Processor.md",
     "Python/Data Type/void.md",
     "Python/Data Type/int.md",
     "PyTorch/torch/torch.Generator.md",
