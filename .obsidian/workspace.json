@@ -35,9 +35,11 @@
             "id": "45b89102679f5799",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.8"
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PyTorch/Operation/torch.roll.md",
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PyTorch/Operation/torch.roll.md",
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PyTorch/Operation/torch.roll.md"
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md"
               }
             }
           }
@@ -172,6 +174,13 @@
   },
   "active": "45b89102679f5799",
   "lastOpenFiles": [
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation",
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion.md",
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion",
+    "Computational_Problem_Solving",
+    "PyTorch/autograd/Overview.md",
+    "PyTorch/autograd",
     "PyTorch/Tensor/torch.nn.Fold.md",
     "PyTorch/Operation/torch.roll.md",
     "Diffusers/Internal Classes/Attention Processor.md",
