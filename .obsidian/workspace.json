@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md"
+                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md"
               }
             }
           }
@@ -174,7 +174,8 @@
   },
   "active": "45b89102679f5799",
   "lastOpenFiles": [
-    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space Complexity.md",
+    "Untitled.canvas",
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion",
