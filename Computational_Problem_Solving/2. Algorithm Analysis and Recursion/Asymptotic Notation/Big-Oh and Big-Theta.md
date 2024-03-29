@@ -14,4 +14,5 @@
 - More precise than the big-oh notation
 
 ![[big-theta notation.png]]
-- **M**
+- **Main difference: Big-Theta has lower-bound**
+

@@ -38,7 +38,7 @@
               "type": "markdown",
               "state": {
                 "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Big-Oh and Big-Theta.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 246.5
   },
   "right": {
     "id": "a0d7c0ee7e6413d8",
@@ -172,11 +172,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c1704047c8f023c9",
+  "active": "45b89102679f5799",
   "lastOpenFiles": [
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/e.g., Find Max.md",
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Complexity Analysis",
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Big-Oh and Big-Theta.md",
     "Computational_Problem_Solving/png/big-theta notation.png",
     "Computational_Problem_Solving/png/big-oh notation.png",
-    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Big-Oh and Big-Theta.md",
     "Computational_Problem_Solving/png",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Untitled",
@@ -200,7 +202,6 @@
     "Python/Data Type/void.md",
     "Python/Data Type/int.md",
     "PyTorch/torch/torch.Generator.md",
-    "PyTorch/torch",
     "PyTorch/Tensor/In-place random sampling.md",
     "PyTorch/Operation/torch.cumprod.md",
     "Video Retrieval/DiffusionRet-Generative Text-Video Retrieval with Diffusion Model (ICCV 23).md",
