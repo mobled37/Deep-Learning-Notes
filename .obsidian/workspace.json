@@ -172,8 +172,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "45b89102679f5799",
+  "active": "c1704047c8f023c9",
   "lastOpenFiles": [
+    "Computational_Problem_Solving/png/스크린샷 2024-03-29 오후 11.47.36.png",
+    "Computational_Problem_Solving/png",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Big-Oh and Big-Theta.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Untitled",
@@ -201,7 +203,6 @@
     "PyTorch/Tensor/In-place random sampling.md",
     "PyTorch/Operation/torch.cumprod.md",
     "Video Retrieval/DiffusionRet-Generative Text-Video Retrieval with Diffusion Model (ICCV 23).md",
-    "Diffusers/Internal Classes",
     "PyTorch/Tensor/torch.is_inf.md",
     "Python/Data Type/tuple.md",
     "PyTorch/Tensor/torch.tensor.md"
