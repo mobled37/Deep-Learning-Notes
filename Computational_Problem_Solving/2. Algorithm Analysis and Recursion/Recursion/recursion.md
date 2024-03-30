@@ -34,6 +34,14 @@ def factorial(n: int) -> int:
 		return n * factorial(n - 1)
 ```
 
+- (HARD PROBLEM) permutation
+```python
+"""
+Pro
+
+
+```
+
 --------
 ***references***
 - [recursion](https://iamsjy17.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B8%B0%EC%B4%88/2019/05/13/recursion1.html)
