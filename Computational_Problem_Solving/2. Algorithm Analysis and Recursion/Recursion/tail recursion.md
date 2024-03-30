@@ -27,6 +27,21 @@ For the sequence of recursive calls $f(x_1) \rightarrow f(x_2) \rightarrow f(x_3
 	2. Function $f(x_2)$ recursively calls $f(x_3)$ in step 2
 	3. Function $f(x_3)$ reaches the base case, and **function simply returns the result to the first caller without going back to the previous function calls.** (순차적임)
 
+**Examples**
+```python
+def sum_of_numbers_tail_recursion(lst: List[int]) -> int:
+	# base case
+	if len(lst) == 1:
+		return lst[0]
+	else:
+		return sum_of_numbers_tail_recursion(lst[:-1]) + lst[-1]
+```
+- This function cannot be called *tail recursion*. Because, when base case, we have the operation to add `lst[0]`. 
+
+So the fixed version
+
+
+
 --------
 references
 - [tail recursion](https://www.geeksforgeeks.org/tail-recursion/)
