@@ -29,7 +29,7 @@ For the sequence of recursive calls $f(x_1) \rightarrow f(x_2) \rightarrow f(x_3
 
 **Examples**
 ```python
-def sum_of_numbers_tail_recursion(lst: List[int]) -> int:
+def sum_of_numbers_non_tail_recursion(lst: List[int]) -> int:
 	# base case
 	if len(lst) == 1:
 		return lst[0]
@@ -39,7 +39,14 @@ def sum_of_numbers_tail_recursion(lst: List[int]) -> int:
 - This function cannot be called *tail recursion*. Because, when base case, we have the operation to add `lst[0]`. 
 
 So the fixed version
-
+```python
+def sum_of_numbers_tail_recursion(lst: List[int], total: int = 0) -> int:
+	# base case
+	if len(lst) == 0:
+		return total
+	else:
+		return sum_of_
+```
 
 
 --------
