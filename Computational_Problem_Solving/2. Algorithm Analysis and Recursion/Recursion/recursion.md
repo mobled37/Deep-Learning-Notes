@@ -8,3 +8,14 @@
 
 **Time complexity of recursive solutions**
 - **Time complexity $O(T)$ of a recursive algorithm**: $O(T)=R \times O(s)$ 
+	- $R$: The number of recursion invocations
+	- $O(S)$: The time complexity of calculation that incurs along with each recursion call
+- **Example**: reverse a string
+	- `reverse(s) = reverse(s[1...n]) + s[0]`
+	- Time Complexity: $O(\text{reverse})=n\times O(1)=O(n)$
+
+**Space complexity of recursive functions**
+- Two parts of the space consumption
+	- **Recursion-related space + Non-recursion-related space**
+- **Recursion-related**
+	- **Stack** to keep track of **recursive function calls**
