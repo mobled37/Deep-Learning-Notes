@@ -23,6 +23,8 @@
 - **Non-recursion-related**
 	- Space that is allocated for the global variables
 
+**Examples**
+
 
 --------
 ***references***
