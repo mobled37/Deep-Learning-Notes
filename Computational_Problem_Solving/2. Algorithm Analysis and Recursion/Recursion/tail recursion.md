@@ -17,11 +17,15 @@ def prints(n):
 
 **Benefits of Tail Recursion**
 
-
 - The tail recursive functions are considered better than non-tail recursive functions as **tail-recursion can be optimized by the compiler.**
 	- Avoid the accumulation of stack overheads during the recursive calls
-	- 
 
+![[tail-recursion.png]]
+
+For the sequence of recursive calls $f(x_1) \rightarrow f(x_2) \rightarrow f(x_3), f(x)$ is implemented as tail recursion
+	1. Space in the stack is allocated for $f(x_1)$ in order to call $f(x_2)$ in step 1
+	2. Function $f(x_2)$ recursively calls $f(x_3)$ in step 2
+	3. Function $f(x_3)$ reaches the base case, and **function simply returns the result to the first caller without going back to the previous function calls.** (순차적임)
 
 --------
 references
