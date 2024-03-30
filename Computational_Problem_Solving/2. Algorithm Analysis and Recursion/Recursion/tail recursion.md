@@ -50,7 +50,16 @@ def sum_of_numbers_tail_recursion(lst: List[int], total: int = 0) -> int:
 - This function can be called tail recursion because last operation is the recursion call. 
 
 Using helper function
-
+```python
+def helper_sum_of_numbers_tail_recursion(lst: List[int]) -> int:
+	def helper(lst: List[int], total: int = 0):
+		if len(lst) == 0:
+			return total
+		else:
+			return helper(lst[:-1], total + lst[-1])
+	return helper(lst, 0)
+```
+- The helper function contains an additional variable that stores the value from the last call.
 
 --------
 references
