@@ -1,9 +1,10 @@
 * Breaks down a problem into **smaller subproblems** to obtain a solution
 * A Recursive function consists of two parts
-	1. **Base case**: what sholud the algorithm do in the simplest situation? → 적어도 하나의 recursion에 빠지지 않는 경우가 존재해야 한다. 
+	1. **Base case**: what sholud the algorithm do in the simplest situation?
+		- **A condition** that terminates the recursion and prevents an infinite loop. Without base case, recursion never stop! 
+		- There must be at **least one case** where it does not fall into any recursion.
 		- **Terminating scenario**: does not use recursion to produce an answer
-		- Without base cases, an algorithm would never terminate!
-		- **Recursive case**: recursion을 반복하다보면 결국 base case로 수렴해야 한다. 
+		- **Recursive case**: When repeat recursion, it must converges into base case. 
 	2. **Inductive step**: how does the algorithm build up the solution?
 
 **Time complexity of recursive solutions**
@@ -25,3 +26,4 @@
 
 --------
 ***references***
+- [recursion](https://iamsjy17.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B8%B0%EC%B4%88/2019/05/13/recursion1.html)
