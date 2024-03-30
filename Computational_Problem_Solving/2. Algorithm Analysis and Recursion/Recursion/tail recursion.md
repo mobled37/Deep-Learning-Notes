@@ -34,7 +34,7 @@ def sum_of_numbers_non_tail_recursion(lst: List[int]) -> int:
 	if len(lst) == 1:
 		return lst[0]
 	else:
-		return sum_of_numbers_tail_recursion(lst[:-1]) + lst[-1]
+		return sum_of_numbers_non_tail_recursion(lst[:-1]) + lst[-1]
 ```
 - This function cannot be called *tail recursion*. Because, when base case, we have the operation to add `lst[0]`. 
 
@@ -45,8 +45,11 @@ def sum_of_numbers_tail_recursion(lst: List[int], total: int = 0) -> int:
 	if len(lst) == 0:
 		return total
 	else:
-		return sum_of_
+		return sum_of_numbers_tail_recursion(lst[:-1], total + lst[-1])
 ```
+- This function can be called tail recursion because last operation is the recursion call. 
+
+Using helper function
 
 
 --------
