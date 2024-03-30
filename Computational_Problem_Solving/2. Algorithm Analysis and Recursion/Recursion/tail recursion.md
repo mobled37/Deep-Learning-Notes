@@ -17,8 +17,10 @@ def prints(n):
 
 **Benefits of Tail Recursion**
 
-- Avoid the accumulation of stack overheads during the recursive calls
-- 
+
+- The tail recursive functions are considered better than non-tail recursive functions as **tail-recursion can be optimized by the compiler.**
+	- Avoid the accumulation of stack overheads during the recursive calls
+	- 
 
 
 --------
