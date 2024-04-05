@@ -34,6 +34,10 @@ class LinkedList:
 
 ### Deleting a Node from a Linked List
 
+- Given a node **n**, find the previous node **prev** and set **prev.next** equal to **n.next**.
+- Check for the **null pointer** (or None)
+- Update the **head** or **tail** pointer as necessary.
+
 ```python
 def deleteNode(head, d):
 	n = head  # n is node, contains (data, next)
@@ -43,4 +47,19 @@ def deleteNode(head, d):
 		if n.next.data == d:  
 			n.next = n.next.next  # jump twice
 			return head  # head didn't change
+		n = n.next
+	return head
+```
+
+```python
+def deleteNodedouble(head, d):
+	n = head 
+	if n.data == d:
+		return head.next
+	while n.next is not None:
+		if n.next.data ==d:
+			n.next = n.next.prev
+			return head
+		n = n.prev
+	return head
 ```
