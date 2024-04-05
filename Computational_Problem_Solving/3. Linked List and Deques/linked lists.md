@@ -18,6 +18,8 @@ class Node:
 	def __init__(self, d):
 		self.data = d
 		self.next = None # pointer
+		self.prev = None
+		
 	def appendToTail(self, d):
 		end = Node(d)
 		n = self
@@ -30,6 +32,31 @@ class Node:
 class LinkedList:
 	def __init__(self):
 		self.head = None
+		
+	def append(self, data):
+		"""
+		appends a new node containing the given data to the end of the linked list
+		
+		Args:
+			data: The data to be stored in the new node.
+		"""
+		
+		new_node = Node(data)
+		if self.head is None:
+			self.head = new_node
+			return
+			
+		last = self.head
+		while last.next:
+			last = last.next  # until the end
+		last.next = new_node
+		
+		new_node.prev = last
+	
+	def print_list(self):
+		"""
+		prints the contents of
+		"""
 ```
 
 ### Deleting a Node from a Linked List
