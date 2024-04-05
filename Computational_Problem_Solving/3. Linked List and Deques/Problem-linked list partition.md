@@ -66,3 +66,8 @@ if __name__ == "__main__":
 	print(output_list) # [3, 2, 1, 5, 8, 5, 10]
 ```
 
+Questions
+1. Why do `left = left.next` and `right = right.next`?
+	- It's essential for **building the left partition** of the linked list, which contains nodes with values less than `x`
+	- It advances the `left` pointer to the next node in the left partition, ensuring that nodes are correctly linked together. 
+	- It demonstrates the dynamic nature of linked list operations, where **pointers are updated as nodes are added**. 
