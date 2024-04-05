@@ -55,8 +55,13 @@ class LinkedList:
 	
 	def print_list(self):
 		"""
-		prints the contents of
+		prints the contents of the linked list in a space-separated format
 		"""
+		temp = self.head
+		while temp:
+			print(temp.data, end=" ")
+			temp = temp.next
+		print()
 ```
 
 ### Deleting a Node from a Linked List
