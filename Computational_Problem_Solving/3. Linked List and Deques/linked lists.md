@@ -31,7 +31,7 @@ class Node:
 ```python
 class LinkedList:
 	def __init__(self):
-		self.head = None
+		self.head = None  # head is starting point
 		
 	def append(self, data):
 		"""
