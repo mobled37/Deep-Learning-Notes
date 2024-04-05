@@ -40,16 +40,18 @@ class LinkedList:
 
 ```python
 def deleteNode(head, d):
-	n = head  # n is node, contains (data, next)
-	if n.data == d:
-		return head.next  # move head
-	while n.next is not None:
+	n = head  # initialize a temporary variable n to the head node
+	if n.data == d:  # check if the next node's value matches the target value
+		return head.next  # if so, returns the next node as the new head, effectively removing the first node.
+	while n.next is not None: # iterates through the list until the end is reached
 		if n.next.data == d:  
 			n.next = n.next.next  # jump twice
 			return head  # head didn't change
 		n = n.next
 	return head
 ```
+
+- the traverse direction is opposite.
 
 ```python
 def deleteNodedouble(head, d):
@@ -58,8 +60,8 @@ def deleteNodedouble(head, d):
 		return head.next
 	while n.next is not None:
 		if n.next.data ==d:
-			n.next = n.next.prev
+			n.next = n.next.prev # if so, it skips over the node by linking the current node's next pointer to the node before the one being deleted
 			return head
-		n = n.prev
+		n = n.prev  # moves to the previous node to continue the traversal
 	return head
 ```
