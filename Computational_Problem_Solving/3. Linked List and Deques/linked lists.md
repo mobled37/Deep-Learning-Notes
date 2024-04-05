@@ -31,3 +31,16 @@ class LinkedList:
 	def __init__(self):
 		self.head = None
 ```
+
+### Deleting a Node from a Linked List
+
+```python
+def deleteNode(head, d):
+	n = head  # n is node, contains (data, next)
+	if n.data == d:
+		return head.next  # move head
+	while n.next is not None:
+		if n.next.data == d:  
+			n.next = n.next.next  # jump twice
+			return head  # head didn't change
+```
