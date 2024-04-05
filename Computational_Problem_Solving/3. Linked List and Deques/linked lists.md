@@ -22,5 +22,12 @@ class Node:
 		end = Node(d)
 		n = self
 		while n.next is not None:
-			n =
+			n = n.next  # point to next node
+		n.next = end
+```
+
+```python
+class LinkedList:
+	def __init__(self):
+		self.head = None
 ```
