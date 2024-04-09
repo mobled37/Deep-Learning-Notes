@@ -4,7 +4,8 @@
 * Each node represents one item in the list
 * Pointer to the next node's memory address (link) - each node knows **data** and **link**
 * First node is referred to as its **head**, and its final node as its **tail**. The last elemet (tail) points to NULL. 
-* 
+* 인덱스가 없으므로, 값에 접근하려면 **head** 포인터부터 순서대로 접근해야한다. 
+* 포인터로 연결되어 있으므로 **데이터를 삽입하거나 삭제하는 연산 속도가 빠르다** $O(c)$.
 
 ### Basic Operations
 1. **Traversing** the linked list
