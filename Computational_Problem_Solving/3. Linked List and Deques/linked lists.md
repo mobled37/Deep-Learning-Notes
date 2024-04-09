@@ -4,6 +4,7 @@
 * Each node represents one item in the list
 * Pointer to the next node's memory address (link) - each node knows **data** and **link**
 * First node is referred to as its **head**, and its final node as its **tail**. The last elemet (tail) points to NULL. 
+* 
 
 ### Basic Operations
 1. **Traversing** the linked list
