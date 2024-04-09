@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/recursion.md",
+                "file": "stackoverflow/이영서 발표.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/recursion.md",
+                "file": "stackoverflow/이영서 발표.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/recursion.md",
+                "file": "stackoverflow/이영서 발표.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,11 +162,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/recursion.md"
+                "file": "stackoverflow/이영서 발표.md"
               }
             }
+          },
+          {
+            "id": "3a4c5b6a69af6657",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -184,10 +193,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c3b3f1021474eb37",
+  "active": "3a4c5b6a69af6657",
   "lastOpenFiles": [
-    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/recursive solutions vs iterative solutions.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/recursion.md",
+    "stackoverflow/이영서 발표.md",
+    "Papers/Text-to-Audio Generation.md",
+    "Papers/Text-to-Image Editing.md",
+    "Papers",
+    "DL Theories/Signal Processing/png/neural vocoder.png",
+    "DL Theories/Signal Processing/png/neural vocoder progress.png",
+    "DL Theories/Signal Processing/png",
+    "DL Theories/Signal Processing/neural vocoder.md",
+    "DL Theories/Signal Processing",
+    "Computational_Problem_Solving/png/linked lists.png",
+    "Computational_Problem_Solving/png/doubly linked lists.png",
+    "Computational_Problem_Solving/3. Linked List and Deques/runner technique (two pointer).md",
+    "Computational_Problem_Solving/3. Linked List and Deques/linked lists.md",
+    "Computational_Problem_Solving/3. Linked List and Deques/doubly linked lists.md",
+    "Computational_Problem_Solving/3. Linked List and Deques/Problem-linked list partition.md",
+    "Computational_Problem_Solving/3. Linked List and Deques",
+    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/recursive solutions vs iterative solutions.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion/tail recursion.md",
     "Computational_Problem_Solving/png/tail-recursion.png",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion",
@@ -203,26 +228,16 @@
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion",
-    "Computational_Problem_Solving",
     "PyTorch/autograd/Overview.md",
-    "PyTorch/autograd",
     "PyTorch/Tensor/torch.nn.Fold.md",
     "PyTorch/Operation/torch.roll.md",
     "Diffusers/Internal Classes/Attention Processor.md",
     "stackoverflow/PyTorch/Delete model from gpu.md",
-    "stackoverflow/PyTorch",
-    "stackoverflow",
     "Python/Method/staticmethod.md",
     "PyTorch/Tensor/torch.repeat_interleave.md",
     "Python/Method/__call__.md",
     "Python/Data Type/void.md",
     "Python/Data Type/int.md",
-    "PyTorch/torch/torch.Generator.md",
-    "PyTorch/Tensor/In-place random sampling.md",
-    "PyTorch/Operation/torch.cumprod.md",
-    "Video Retrieval/DiffusionRet-Generative Text-Video Retrieval with Diffusion Model (ICCV 23).md",
-    "PyTorch/Tensor/torch.is_inf.md",
-    "Python/Data Type/tuple.md",
-    "PyTorch/Tensor/torch.tensor.md"
+    "PyTorch/torch/torch.Generator.md"
   ]
 }
