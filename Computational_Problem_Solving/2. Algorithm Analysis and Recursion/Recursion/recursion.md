@@ -37,11 +37,31 @@ def factorial(n: int) -> int:
 - (HARD PROBLEM) permutation
 ```python
 """
-Pro
+Problem:
+- design an algorithm to print all permutations of a string.
+- For simplicity, assume all characters are unique.
 
+input: "abc"
+output: ["cab", "acb", "abc", "cba", "bca", "bac"]
+"""
 
+def permute(s: str) -> List[str]:
+	# base case
+	if len(s) == 1:
+		return s
+
+	output = []
+	for i in range(len(s)):
+		# slice the string
+		rest = s[:i] + s[i+1:]
+		for p in permute(rest):    # here is tricky part
+			output.append(s[i] + p)
+
+	return output
 ```
 
+- Hint: Solve the problem for a **base case** (n = 1) and then try to **build up from there** to get the recurrence (n: the length of a string)
+- **Base case and building algorithms from there** often lead to recursive algorithms
 --------
 ***references***
 - [recursion](https://iamsjy17.github.io/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B8%B0%EC%B4%88/2019/05/13/recursion1.html)
