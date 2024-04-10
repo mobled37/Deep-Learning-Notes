@@ -13,4 +13,6 @@ Generally, three methods for performing amortized analysis:
 
 **Aggregate Analysis**: Determines the upper bound $T(n)$ on the total cost of a sequence of $n$ operations, then calculates the amortized cost to be $T(n)/n$. 
 
-**Accounting method**: a form of aggregate analysis which assigns to each operation an *amortized cost* which
+**Accounting method**: a form of aggregate analysis which assigns to each operation an *amortized cost* which may differ from its actual cost. Early operations have an amortized cost higher than their actual cost, which accumulates a saved "credit" that pays for later operations having an amortized cost lower than their actual cost.
+
+**Potential method**: a form of accounting method where the saved credit is computed as a function (the "potential") of the state of the data structure. The amortized cost is the immediate cost plus the change in potential. 
