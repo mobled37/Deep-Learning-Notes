@@ -1,0 +1,3 @@
+- a method for analyzing a given algorithm's time and memory complexities. 
+- For a given operation of an algorithm, certain situations may imply a significant cost in resources, whereas other situations may not be as costly.
+- The amortized analysis **considers both the costly and less costly operations together over the whole sequence of operations**.
