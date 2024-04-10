@@ -7,3 +7,9 @@ Feature
 
 Advantages
 - 큰 문제를 재귀적으로 나누어 해결하기에 간단하지만 빠르며 병렬적으로 문제를 해결할 수 있다는 장점이 있다. 
+
+Disadvantages
+- recursive하게 문제를 해결하기에 인풋이 너무 큰 경우 많은 프로그래밍 언어에서 stack overflow가 발생할 수 있으며, 이는 메모리의 비효율적 사용을 의미
+
+![[divide and conquer.png]]
+
