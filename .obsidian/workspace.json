@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithm_book/References.md",
+                "file": "Computational_Problem_Solving/4. Sets and Hash Maps/hash maps.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algorithm_book/References.md",
+                "file": "Computational_Problem_Solving/4. Sets and Hash Maps/hash maps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algorithm_book/References.md",
+                "file": "Computational_Problem_Solving/4. Sets and Hash Maps/hash maps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algorithm_book/References.md"
+                "file": "Computational_Problem_Solving/4. Sets and Hash Maps/hash maps.md"
               }
             }
           },
@@ -203,8 +203,13 @@
   },
   "active": "31f8256f890861b6",
   "lastOpenFiles": [
-    "Algorithm_book/Untitled 1.md",
+    "Computational_Problem_Solving/4. Sets and Hash Maps/sets.md",
+    "Computational_Problem_Solving/4. Sets and Hash Maps/hash maps.md",
+    "Algorithm_book/3. 자료구조/stack.md",
+    "Computational_Problem_Solving/4. Sets and Hash Maps",
     "Algorithm_book/References.md",
+    "Algorithm_book/3. 자료구조/Untitled",
+    "Algorithm_book/Untitled 1.md",
     "Algorithm_book/3. 자료구조",
     "Untitled.md",
     "Algorithm_book",
@@ -236,18 +241,13 @@
     "Computational_Problem_Solving/png/tail-recursion.png",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Recursion",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/e.g., Find Max.md",
-    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Complexity Analysis",
     "Computational_Problem_Solving/png/big-theta notation.png",
     "Computational_Problem_Solving/png/big-oh notation.png",
-    "Computational_Problem_Solving/png",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
     "Untitled.canvas",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion.md",
     "PyTorch/autograd/Overview.md",
     "PyTorch/Tensor/torch.nn.Fold.md",
-    "PyTorch/Operation/torch.roll.md",
-    "Diffusers/Internal Classes/Attention Processor.md",
-    "stackoverflow/PyTorch/Delete model from gpu.md",
-    "Python/Method/staticmethod.md"
+    "PyTorch/Operation/torch.roll.md"
   ]
 }

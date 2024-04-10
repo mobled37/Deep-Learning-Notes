@@ -1,0 +1,2 @@
+- **hashing**: the process of taking elements and converting them to numbers
+- **hash map**: data structure that stores the **keys and values** by mapping keys to their associated values via a has function
