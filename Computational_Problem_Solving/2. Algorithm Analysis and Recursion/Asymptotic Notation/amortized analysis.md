@@ -12,3 +12,5 @@ Generally, three methods for performing amortized analysis:
 - the choice of which to use depends on which is most convenient for a particular situation.
 
 **Aggregate Analysis**: Determines the upper bound $T(n)$ on the total cost of a sequence of $n$ operations, then calculates the amortized cost to be $T(n)/n$. 
+
+**Accounting method**: a form of aggregate analysis which assigns to each operation an *amortized cost* which
