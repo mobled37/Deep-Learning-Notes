@@ -203,8 +203,9 @@
   },
   "active": "31f8256f890861b6",
   "lastOpenFiles": [
-    "Computational_Problem_Solving/4. Sets and Hash Maps/collision resolution.md",
+    "Algorithm_book/3. 자료구조/queue.md",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/amortized analysis.md",
+    "Computational_Problem_Solving/4. Sets and Hash Maps/collision resolution.md",
     "Computational_Problem_Solving/4. Sets and Hash Maps/collision.md",
     "Computational_Problem_Solving/4. Sets and Hash Maps/hash maps.md",
     "Computational_Problem_Solving/4. Sets and Hash Maps/sets.md",
@@ -247,7 +248,6 @@
     "Computational_Problem_Solving/png/big-theta notation.png",
     "Computational_Problem_Solving/png/big-oh notation.png",
     "Computational_Problem_Solving/2. Algorithm Analysis and Recursion/Asymptotic Notation/Space and Time Complexity.md",
-    "Untitled.canvas",
-    "Computational_Problem_Solving/2. Algorithm Analysis and Recursion.md"
+    "Untitled.canvas"
   ]
 }
